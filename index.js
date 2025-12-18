@@ -44,11 +44,11 @@ app.post("/api/sentiment", async (req, res) => {
 //Normal routes here
 //Serve main index.html page
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/docs/index.html");
 });
 
 //Serve static files from main folder
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + "/docs"));
 
 //Start server
 app.listen(port, () => {
