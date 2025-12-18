@@ -47,7 +47,7 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/docs/index.html");
 });
 
-//Serve static files from main folder
+//Serve static files from docs folder
 app.use(express.static(__dirname + "/docs"));
 
 //Start server
